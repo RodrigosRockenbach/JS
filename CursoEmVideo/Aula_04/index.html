@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09</title>
+    <link rel="stylesheet" href="CSS\style.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header class="jumbotron text-center">
+        <h1>Iniciando os estudos de DOM</h1>
+        <br>
+        <h4>Curso apresentado por Gustavo Guanabara.</h4>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <article class="col-sm-6">
+                <h3><strong>O que aprederemos nesta aula:</strong></h3>
+                <br>
+                <p>Você sabe o que significa a sigla DOM? Sabe para que serve o Document Object Model? Sabe como criar uma árvore DOM para o seu site? Sabe como usar o JavaScript para manipular o DOM? Sabe para que servem os elementos Parent e Child em um DOM? Sabe utilizar os métodos getElementByTagName, getElementById, getElementByName, getElementByClassName, querySelector de acesso ao DOM no JavaScript?</p>
+            </article>
+    
+            <aside class="col-sm-6">
+                <h3><strong>DOM</strong> primeiros passos: </h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium et est qui illo maxime doloremque? Labore eum sunt nulla iure quia? Laborum, eligendi a quam maxime adipisci minima similique placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempore nostrum ratione nihil quia voluptate eveniet minus numquam, enim dolor, omnis accusantium at blanditiis, voluptas quas suscipit laborum tempora qui!</p>
+                <br>
+                <div id="msg">Clique aqui!</div>
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <br>
+    </footer>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        
+        /*var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando... '*/
+
+        var d = document.querySelector('div#msg')
+        d.style.color = 'black'
+
+    </script>
+
+</body>
+</html>

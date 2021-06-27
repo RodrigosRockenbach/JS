@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10</title>
+    <link rel="stylesheet" href="CSS\style.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header class="jumbotron text-center">
+        <h1>Calculos em JavaScript</h1>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <article class="col-sm-5">
+                <div class="divCalcSoma">
+                    <h2>Somando Valores</h2>
+                    <input type="number" name="txtn1" id="txtn1">
+                    <input type="number" name="txtn1" id="txtn2">
+                    <input type="button" value="somar" onclick="somar()">
+                    <br>
+                    <div class="divResul" id="res"><strong>Resultado: </strong> </div>
+                </div> 
+            </article>
+
+        </div>
+    </section>
+    
+    <script>
+        function somar(){
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var res  = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é: <strong>${s}</strong>`
+        }
+
+    </script>
+</body>
+</html>

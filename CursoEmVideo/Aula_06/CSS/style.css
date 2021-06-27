@@ -1,0 +1,35 @@
+*{
+    margin: 0%;
+
+}
+
+body{
+    text-align: justify;
+
+}
+
+input{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+
+}
+
+h2{
+    text-align: center;
+    border-bottom: solid 1px;
+    
+}
+
+.divCalcSoma{
+    background: rgb(214, 209, 212) !important;
+    padding: 10px;
+    border: solid 1px;
+    text-align: center;
+    line-height: 20px;
+
+}
+
+.divResul{
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
