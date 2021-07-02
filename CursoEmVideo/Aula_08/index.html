@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 12</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="Matter/CSS/style.css">
+    <script src="Matter/JS/script.js"></script>
+</head>
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <h1>Aula 12 </h1>
+        <h3>Estrutura aninhada</h3>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <aside class="col-md-10 container">
+                <h2><strong>Sistema de votação</strong></h2>
+                <br>
+                <form action="#">
+                    <h5>Digite a sua idade: 
+                        <input type="number" id="idade">
+                        <button type="button" onclick="Verificar()">Verificar</button>
+                    </h5>
+                </form>
+                <br>
+                <h5>Resultado: <input type="text" id="resultado"> </h5>
+
+            </aside>
+            <article class="col-md-10 container">
+                <h2><strong>Horario</strong></h2>
+                <br>
+                <h5>Hora exata:
+                    <button type="button" onclick="horario()">Verificar</button>
+                </h5>
+                <br>
+                <h5> <input type="text" id="resposta"></h5>
+            </article>
+
+            <div class="col-md-10 container" id="caixa">
+                <h2><strong>Dia da semana:</strong></h2>
+                <br>
+                <h5>Dia exato:
+                    <button type="button" onclick="diaSem()">Carregar</button>
+                </h5>
+                <br>
+                <h5> <input type="text" id="dia"> </h5>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h4>Rodrigo Rockenbach</h4>
+    </footer>
+</body>
+</html>
